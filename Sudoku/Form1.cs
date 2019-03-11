@@ -16,7 +16,8 @@ namespace Sudoku
         //Distribute random starting numbers at the start of the game.
         //Make button status that changes on click
         int a;
-        bool i1 = false, i2 = false, i3 = false, i4 = false, i5 = false, i6=false, i7=false, i8=false, i9=false;
+        int[] m = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        bool i1 = false, i2 = false, i3 = false, i4 = false, i5 = false, i6 = false, i7 = false, i8 = false, i9 = false;
 
 #pragma warning disable IDE1006 // Naming Styles
         private void b7_Click(object sender, EventArgs e)
@@ -171,7 +172,7 @@ namespace Sudoku
 
         private void Number_Click()
         {
-            if(i1==true)
+            if(i1 == true)
             {
                 a = Int32.Parse(b1.Text);
             }
